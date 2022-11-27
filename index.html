@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+ th , td{
+            border: 1px solid black
+        }
+</style>
+<body>
+    <div class="tabela">
+        <table>
+            <tr>
+            <th colspan="8">Grupo A</th>
+            </tr>
+            <tr>
+                <td>21/11/2022</td>
+                <td>7:00</td>
+                <td>Senegal</td>
+                <td><input type="number" id="Sen1"></td>
+                <td>X</td>
+                <td><input type="number" id="Hol1"></td>
+                <td>Holanda</td>
+                <td>AL THUMAMA</td>
+            </tr>
+            <tr>
+                <td>21/11/2022</td>
+                <td>13:00</td>
+                <td>Catar</td>
+                <td><input type="number" id="Cat1"></td>
+                <td>X</td>
+                <td><input type="number" id="Eq1" ></td>
+                <td>Equador</td>
+                <td>AL KHOR</td>
+            </tr>
+            <tr>
+                <td>25/11/2022</td>
+                <td>10:00</td>
+                <td>Catar</td>
+                <td><input type="number" id="Cat2"></td>
+                <td>X</td>
+                <td><input type="number" id="Sen2"></td>
+                <td>Senegal</td>
+                <td>AL THUMAMA</td>
+            </tr>
+            <tr>
+                <td>25/11/2022</td>
+                <td>13:00</td>
+                <td>Holanda</td>
+                <td><input type="number" id="Hol2"></td>
+                <td>X</td>
+                <td><input type="number" id="Eq2"></td>
+                <td>Equador</td>
+                <td>INTER KHALIFA</td>
+            </tr>
+            <tr>
+                <td>29/11/2022</td>
+                <td>12:00</td>
+                <td>Holanda</td>
+                <td><input type="number" id="Hol3"></td>
+                <td>X</td>
+                <td><input type="number" id="Cat3"></td>
+                <td>Catar</td>
+                <td>AL KHOR</td>
+            </tr>
+            <tr>
+                <td>29/11/2022</td>
+                <td>12:00</td>
+                <td>Equador</td>
+                <td><input type="number" id="Eq3"></td>
+                <td>X</td>
+                <td><input type="number" id="Sen3"></td>
+                <td>Senegal</td>
+                <td>INTER KHALIFA</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="classificacao">
+        <table>
+            <th colspan="9">Classificação do grupo A</th>
+            <tr>
+                <td width = "36%"></td>
+                <td width ="8%">PT</td>
+                <td width ="8%">J</td>
+                <td width ="8%">V</td>
+                <td width ="8%">E</td>
+                <td width ="8%">D</td>
+                <td width ="8%">GP</td>
+                <td width ="8%">GC</td>
+                <td width ="8%">SG</td>
+            </tr>
+            <tr>
+                <td>Catar</td>
+                <td><a id="PTcat">0</a></td>
+                <td><a id="Jcat">0</a></td>
+                <td><a id="Vcat">0</a></td>
+                <td><a id="Ecat">0</a></td>
+                <td><a id="Dcat">0</a></td>
+                <td><a id="GPcat">0</a></td>
+                <td><a id="GCcat">0</a></td>
+                <td><a id="SGcat">0</a></td>
+            </tr>
+            <tr>
+                <td>Equador</td>
+                <td><a id="PTeq">0</a></td>
+                <td><a id="Jeq">0</a></td>
+                <td><a id="Veq">0</a></td>
+                <td><a id="Eeq">0</a></td>
+                <td><a id="Deq">0</a></td>
+                <td><a id="GPeq">0</a></td>
+                <td><a id="GCeq">0</a></td>
+                <td><a id="SGeq">0</a></td>
+            </tr>
+            <tr>
+                <td>Senegal</td>
+                <td><a id="PTsen">0</a></td>
+                <td><a id="Jsen">0</a></td>
+                <td><a id="Vsen">0</a></td>
+                <td><a id="Esen">0</a></td>
+                <td><a id="Dsen">0</a></td>
+                <td><a id="GPsen">0</a></td>
+                <td><a id="GCsen">0</a></td>
+                <td><a id="SGsen">0</a></td>
+            </tr>
+            <tr>
+                <td>Holanda</td>
+                <td><a id="PThol">0</a></td>
+                <td><a id="Jhol">0</a></td>
+                <td><a id="Vhol">0</a></td>
+                <td><a id="Ehol">0</a></td>
+                <td><a id="Dhol">0</a></td>
+                <td><a id="GPhol">0</a></td>
+                <td><a id="GChol">0</a></td>
+                <td><a id="SGhol">0</a></td>
+            </tr>
+        </table>
+    </div>
+    <div class="tabela">
+        <table>
+            <tr>
+            <th colspan="8">Grupo B</th>
+            </tr>
+            <tr>
+                <td>21/11/2022</td>
+                <td>10:00</td>
+                <td>Inglaterra</td>
+                <td><input type="number" id="Ing1"></td>
+                <td>X</td>
+                <td><input type="number" id="Ira1"></td>
+                <td>Irã</td>
+                <td>INTER KHALIFA</td>
+            </tr>
+            <tr>
+                <td>21/11/2022</td>
+                <td>16:00</td>
+                <td>Estados Unidos</td>
+                <td><input type="number" id="Eua1"></td>
+                <td>X</td>
+                <td><input type="number" id="Gal1" ></td>
+                <td>País de Gales</td>
+                <td>AL RAYYAN</td>
+            </tr>
+            <tr>
+                <td>25/11/2022</td>
+                <td>7:00</td>
+                <td>País de Gales</td>
+                <td><input type="number" id="Gal2"></td>
+                <td>X</td>
+                <td><input type="number" id="Ira2"></td>
+                <td>Irã</td>
+                <td>AL RAYYAN</td>
+            </tr>
+            <tr>
+                <td>25/11/2022</td>
+                <td>16:00</td>
+                <td>Inglaterra</td>
+                <td><input type="number" id="Ing2"></td>
+                <td>X</td>
+                <td><input type="number" id="Eua2" ></td>
+                <td>Estados Unidos</td>
+                <td>AL KHOR</td>
+            </tr>
+            <tr>
+                <td>29/11/2022</td>
+                <td>16:00</td>
+                <td>País de Gales</td>
+                <td><input type="number" id="Gal3"></td>
+                <td>X</td>
+                <td><input type="number" id="Ing3"></td>
+                <td>Inglaterra</td>
+                <td>AL RAYYAN</td>
+            </tr>
+            <tr>
+                <td>29/11/2022</td>
+                <td>16:00</td>
+                <td>Irã</td>
+                <td><input type="number" id="Ira3"></td>
+                <td>X</td>
+                <td><input type="number" id="Eua3"></td>
+                <td>Estados Unidos</td>
+                <td>AL THUMAMA</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="classificacao">
+        <table>
+            <th colspan="9">Classificação do grupo B</th>
+            <tr>
+                <td width = "36%"></td>
+                <td width ="8%">PT</td>
+                <td width ="8%">J</td>
+                <td width ="8%">V</td>
+                <td width ="8%">E</td>
+                <td width ="8%">D</td>
+                <td width ="8%">GP</td>
+                <td width ="8%">GC</td>
+                <td width ="8%">SG</td>
+            </tr>
+            <tr>
+                <td>Inglaterra</td>
+                <td><a id="PTing">0</a></td>
+                <td><a id="Jing">0</a></td>
+                <td><a id="Ving">0</a></td>
+                <td><a id="Eing">0</a></td>
+                <td><a id="Ding">0</a></td>
+                <td><a id="GPing">0</a></td>
+                <td><a id="GCing">0</a></td>
+                <td><a id="SGing">0</a></td>
+            </tr>
+            <tr>
+                <td>Irã</td>
+                <td><a id="PTira">0</a></td>
+                <td><a id="Jira">0</a></td>
+                <td><a id="Vira">0</a></td>
+                <td><a id="Eira">0</a></td>
+                <td><a id="Dira">0</a></td>
+                <td><a id="GPira">0</a></td>
+                <td><a id="GCira">0</a></td>
+                <td><a id="SGira">0</a></td>
+            </tr>
+            <tr>
+                <td>Estados Unidos</td>
+                <td><a id="PTeua">0</a></td>
+                <td><a id="Jeua">0</a></td>
+                <td><a id="Veua">0</a></td>
+                <td><a id="Eeua">0</a></td>
+                <td><a id="Deua">0</a></td>
+                <td><a id="GPeua">0</a></td>
+                <td><a id="GCeua">0</a></td>
+                <td><a id="SGeua">0</a></td>
+            </tr>
+            <tr>
+                <td>País de Gales</td>
+                <td><a id="PTgal">0</a></td>
+                <td><a id="Jgal">0</a></td>
+                <td><a id="Vgal">0</a></td>
+                <td><a id="Egal">0</a></td>
+                <td><a id="Dgal">0</a></td>
+                <td><a id="GPgal">0</a></td>
+                <td><a id="GCgal">0</a></td>
+                <td><a id="SGgal">0</a></td>
+            </tr>
+        </table>
+    </div>
+    <div class="tabela">
+        <table>
+            <tr>
+            <th colspan="8">Grupo C</th>
+            </tr>
+            <tr>
+                <td>22/11/2022</td>
+                <td>7:00</td>
+                <td>Argentina</td>
+                <td><input type="number" id="Arg1"></td>
+                <td>X</td>
+                <td><input type="number" id="Arb1"></td>
+                <td>Arábia Saudita</td>
+                <td>CID. EDUCAÇÃO</td>
+            </tr>
+            <tr>
+                <td>22/11/2022</td>
+                <td>13:00</td>
+                <td>México</td>
+                <td><input type="number" id="Mex1"></td>
+                <td>X</td>
+                <td><input type="number" id="Pol1" ></td>
+                <td>Polônia</td>
+                <td>AL WAKRAH</td>
+            </tr>
+            <tr>
+                <td>26/11/2022</td>
+                <td>10:00</td>
+                <td>Polônia</td>
+                <td><input type="number" id="Pol2"></td>
+                <td>X</td>
+                <td><input type="number" id="Arb2"></td>
+                <td>Arábia Saudita</td>
+                <td>CID. EDUCAÇÃO</td>
+            </tr>
+            <tr>
+                <td>26/11/2022</td>
+                <td>16:00</td>
+                <td>Argentina</td>
+                <td><input type="number" id="Arg2"></td>
+                <td>X</td>
+                <td><input type="number" id="Mex2" ></td>
+                <td>México</td>
+                <td>NAC. DE LUSAIL</td>
+            </tr>
+            <tr>
+                <td>30/11/2022</td>
+                <td>16:00</td>
+                <td>Polônia</td>
+                <td><input type="number" id="Pol3"></td>
+                <td>X</td>
+                <td><input type="number" id="Arg3"></td>
+                <td>Argentina</td>
+                <td>PORTO DE DOHA</td>
+            </tr>
+            <tr>
+                <td>30/11/2022</td>
+                <td>16:00</td>
+                <td>Arábia Saudita</td>
+                <td><input type="number" id="Arb3"></td>
+                <td>X</td>
+                <td><input type="number" id="Mex3"></td>
+                <td>México</td>
+                <td>NAC. DE LUSAIL</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="classificacao">
+        <table>
+            <th colspan="9">Classificação do grupo C</th>
+            <tr>
+                <td width = "36%"></td>
+                <td width ="8%">PT</td>
+                <td width ="8%">J</td>
+                <td width ="8%">V</td>
+                <td width ="8%">E</td>
+                <td width ="8%">D</td>
+                <td width ="8%">GP</td>
+                <td width ="8%">GC</td>
+                <td width ="8%">SG</td>
+            </tr>
+            <tr>
+                <td>Argentina</td>
+                <td><a id="PTarg">0</a></td>
+                <td><a id="Jarg">0</a></td>
+                <td><a id="Varg">0</a></td>
+                <td><a id="Earg">0</a></td>
+                <td><a id="Darg">0</a></td>
+                <td><a id="GParg">0</a></td>
+                <td><a id="GCarg">0</a></td>
+                <td><a id="SGarg">0</a></td>
+            </tr>
+            <tr>
+                <td>Arábia Saudita</td>
+                <td><a id="PTarb">0</a></td>
+                <td><a id="Jarb">0</a></td>
+                <td><a id="Varb">0</a></td>
+                <td><a id="Earb">0</a></td>
+                <td><a id="Darb">0</a></td>
+                <td><a id="GParb">0</a></td>
+                <td><a id="GCarb">0</a></td>
+                <td><a id="SGarb">0</a></td>
+            </tr>
+            <tr>
+                <td>México</td>
+                <td><a id="PTmex">0</a></td>
+                <td><a id="Jmex">0</a></td>
+                <td><a id="Vmex">0</a></td>
+                <td><a id="Emex">0</a></td>
+                <td><a id="Dmex">0</a></td>
+                <td><a id="GPmex">0</a></td>
+                <td><a id="GCmex">0</a></td>
+                <td><a id="SGmex">0</a></td>
+            </tr>
+            <tr>
+                <td>Polônia</td>
+                <td><a id="PTpol">0</a></td>
+                <td><a id="Jpol">0</a></td>
+                <td><a id="Vpol">0</a></td>
+                <td><a id="Epol">0</a></td>
+                <td><a id="Dpol">0</a></td>
+                <td><a id="GPpol">0</a></td>
+                <td><a id="GCpol">0</a></td>
+                <td><a id="SGpol">0</a></td>
+            </tr>
+        </table>
+    </div>
+    <div class="tabela">
+        <table>
+            <tr>
+            <th colspan="8">Grupo D</th>
+            </tr>
+            <tr>
+                <td>22/11/2022</td>
+                <td>10:00</td>
+                <td>Dinamarca</td>
+                <td><input type="number" id="Din1"></td>
+                <td>X</td>
+                <td><input type="number" id="Tun1"></td>
+                <td>Tunísia</td>
+                <td>CID. EDUCAÇÃO</td>
+            </tr>
+            <tr>
+                <td>22/11/2022</td>
+                <td>16:00</td>
+                <td>França</td>
+                <td><input type="number" id="Fra1"></td>
+                <td>X</td>
+                <td><input type="number" id="Aus1" ></td>
+                <td>Austrália</td>
+                <td>AL WAKRAH</td>
+            </tr>
+            <tr>
+                <td>26/11/2022</td>
+                <td>7:00</td>
+                <td>Tunísia</td>
+                <td><input type="number" id="Tun2"></td>
+                <td>X</td>
+                <td><input type="number" id="Aus2"></td>
+                <td>Austrália</td>
+                <td>AL WAKRAH</td>
+            </tr>
+            <tr>
+                <td>26/11/2022</td>
+                <td>13:00</td>
+                <td>França</td>
+                <td><input type="number" id="Fra2"></td>
+                <td>X</td>
+                <td><input type="number" id="Din2" ></td>
+                <td>Dinamarca</td>
+                <td>PORTO DE DOHA</td>
+            </tr>
+            <tr>
+                <td>30/11/2022</td>
+                <td>12:00</td>
+                <td>Tunísia</td>
+                <td><input type="number" id="Tun3"></td>
+                <td>X</td>
+                <td><input type="number" id="Fra3"></td>
+                <td>França</td>
+                <td>CID. EDUCAÇÃO</td>
+            </tr>
+            <tr>
+                <td>30/11/2022</td>
+                <td>16:00</td>
+                <td>Austrália</td>
+                <td><input type="number" id="Aus3"></td>
+                <td>X</td>
+                <td><input type="number" id="Din3"></td>
+                <td>Dinamarca</td>
+                <td>AL WAKRAH</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="classificacao">
+        <table>
+            <th colspan="9">Classificação do grupo C</th>
+            <tr>
+                <td width = "36%"></td>
+                <td width ="8%">PT</td>
+                <td width ="8%">J</td>
+                <td width ="8%">V</td>
+                <td width ="8%">E</td>
+                <td width ="8%">D</td>
+                <td width ="8%">GP</td>
+                <td width ="8%">GC</td>
+                <td width ="8%">SG</td>
+            </tr>
+            <tr>
+                <td>França</td>
+                <td><a id="PTfra">0</a></td>
+                <td><a id="Jfra">0</a></td>
+                <td><a id="Vfra">0</a></td>
+                <td><a id="Efra">0</a></td>
+                <td><a id="Dfra">0</a></td>
+                <td><a id="GPfra">0</a></td>
+                <td><a id="GCfra">0</a></td>
+                <td><a id="SGfra">0</a></td>
+            </tr>
+            <tr>
+                <td>Austrália</td>
+                <td><a id="PTaus">0</a></td>
+                <td><a id="Jaus">0</a></td>
+                <td><a id="Vaus">0</a></td>
+                <td><a id="Eaus">0</a></td>
+                <td><a id="Daus">0</a></td>
+                <td><a id="GPaus">0</a></td>
+                <td><a id="GCaus">0</a></td>
+                <td><a id="SGaus">0</a></td>
+            </tr>
+            <tr>
+                <td>Dinamarca</td>
+                <td><a id="PTdin">0</a></td>
+                <td><a id="Jdin">0</a></td>
+                <td><a id="Vdin">0</a></td>
+                <td><a id="Edin">0</a></td>
+                <td><a id="Ddin">0</a></td>
+                <td><a id="GPdin">0</a></td>
+                <td><a id="GCdin">0</a></td>
+                <td><a id="SGdin">0</a></td>
+            </tr>
+            <tr>
+                <td>Tunísia/td>
+                <td><a id="PTtun">0</a></td>
+                <td><a id="Jtun">0</a></td>
+                <td><a id="Vtun">0</a></td>
+                <td><a id="Etun">0</a></td>
+                <td><a id="Dtun">0</a></td>
+                <td><a id="GPtun">0</a></td>
+                <td><a id="GCtun">0</a></td>
+                <td><a id="SGtun">0</a></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

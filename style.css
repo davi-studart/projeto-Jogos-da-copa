@@ -1,0 +1,13 @@
+input{
+    width: 20px;
+}
+.classificacao{
+    float: right;
+    width: 70%;
+    height: 188px;
+}
+.tabela{
+    float: left;
+    width: 30%;
+    height: 188px ;
+}
